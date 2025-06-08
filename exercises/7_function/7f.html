@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>7f</title>
+  </head>
+  <body>
+    <script>
+      /*
+      function convetTemprature(degree,unit){
+        if(unit === 'C'){
+          const result = (degree * 9/5)+32;
+          console.log(`${result} F`)
+        } else{
+          const result = (degree - 32) * 5 / 9;
+          console.log(`${result} C`)
+        }
+      }
+
+      // console.log(convetTemprature(25,'C'));
+      // console.log(convetTemprature(86,'F'))
+      convetTemprature(25,'C');
+    */
+      function convertToFahrenheit(celsius){
+      return (celsius * 9/5)+32;
+     }
+     function convertToCelsius(fahrenheit){
+      return (fahrenheit - 32) * 5/9;
+     }
+     function convertTemprature(degrees,unit){
+      if(unit === 'C'){
+        const result = convertToFahrenheit(degrees);
+        console.log(`${result} F`);
+      } else{
+        const result = convertToCelsius(degrees);
+        console.log(`${result} C`);
+      }
+     }
+
+     convertTemprature(25,'C');
+     convertTemprature(86,'F');
+    </script>
+  </body>
+</html>
