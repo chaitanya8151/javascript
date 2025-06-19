@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9h</title>
+  </head>
+  <body>
+    <input class="js-input" type="text" placeholder="Type something" onkeyup="
+         upadteText();
+      ">
+    <p class="js-msg"></p>
+    <script>
+      function upadteText(){
+        const inputElement = document.querySelector('.js-input');
+        document.querySelector('.js-msg').innerHTML = inputElement.value;
+      }
+    </script>
+  </body>
+</html>

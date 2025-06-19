@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9c</title>
+  </head>
+  <body>
+    <button onclick="
+        // document.querySelector('.js-toss').innerHTML='You chose : heads';
+        choose('heads');
+      ">
+      heads
+    </button>
+    <button onclick="
+      //  document.querySelector('.js-toss').innerHTML='You chose : tails';
+      choose('tails');
+    ">
+      tails
+    </button>
+    <p class="js-toss"></p>
+    
+    <script>
+        function choose(choice){
+          document.querySelector('.js-toss').innerHTML = `You chose : ${choice}`;
+        }
+    </script>
+  </body>
+</html>
